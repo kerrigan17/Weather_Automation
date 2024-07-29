@@ -13,10 +13,10 @@
 
     useEffect(() => {
         const getWeather = async () => {
-        const apiKey = '74c5de22dc4d6da5044ff0b16536cef6'; // Reemplaza con tu API Key
+        const apiKey = '74c5de22dc4d6da5044ff0b16536cef6'; 
         setError(null);
 
-        const cities = ['Asturias', 'Barcelona', 'Madrid', 'Valencia'];
+        const cities = ['Asturias', 'Valencia','Castellon', 'Barcelona', 'Madrid'];
         const requests = cities.map(city =>
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},es&appid=${apiKey}&units=metric`)
         );
